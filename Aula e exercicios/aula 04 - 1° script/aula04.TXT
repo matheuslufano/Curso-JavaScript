@@ -1,0 +1,48 @@
+VARIÁVEIS E TIPOS PRIMITIVOS - Aula 05:
+        Para criar uma variavel se usa a palavra chave "var":
+        
+            var nome 
+            var idade 
+            var puta_q_pariu
+        
+        junto as variaveis criadas é possivel atribuir dados, pois é pra isso que elas servem, como cachotes, caixa, recipente.
+
+            var nome = "matheus" #strings deve estar dentro de aspas
+            var idade = 23      #números tanto faz
+            var nota1 = 9.50
+
+        No JS é preciso declarar o valor da variavel, o exemplo acima declara tudo como string mesmo que seja números.
+        
+            var nome = String("matheus" )
+            var idade = Number(23)     
+            var nota1 =  Number(9.50)
+
+            CONVERTER:
+                 Number.parseInt() //converte pra númeors inteiro
+                 Number.parseFloat() //converte pra númeors decimal
+
+        Para fazer uma função basica como somar é importante declarar o tipo de dados pos caso contratio o JS irá concaternar tudo.
+
+            (number + number) -> para adição
+            (string + string) -> para concaternação
+            
+            String(s) -> converte a variavel soma em texto
+            ou
+            soma.tostring(soma)
+        
+        
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+            //string
+            //Number.parseInt(#vai-converter)
+            //prompt(#mostra/ler-dados)
+        
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+            //string
+            // o JS indentifica o valor. mão precisa do Number.
+        
+        var soma = n1 + n2 
+            //(number + number)
+
+        window.alert('A soma dos valores é ' + String(soma))
+            //Concaternação
+

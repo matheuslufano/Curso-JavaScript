@@ -1,0 +1,50 @@
+TRATAMENTOS DE DADOS - aula 06 de JS
+        
+       MÉTODOS DE INTERAÇÃO:
+        No js tem alguns metador de interação com o usuario.
+
+        CAIXA DE DIÁLOGO DE ALERTA:
+        window.alert(): 
+            - Mostrar uma caixa de mensagem flutuante no topo do navegador.
+            - Geralmente é acompanhada de um botão 'ok'
+            - O cliente não pode iserir nem um dado.
+
+            >>> window.alert('Sejá bem vindo! estar gostando?')
+
+        CAIXA DE DIÁLAGO DE ENTRADA:
+        window.prompt(): 
+            - mostra uma caixa de dialogo
+            - aceita dois argumentos, a mensagem a exibir e uma mensagem sugestiva no capo de resposta/interação.
+            - possui um campo de texto onde o usuário pode inserir informações e botões "OK" e "Cancelar" para confirmar ou cancelar a entrada.
+
+            >>> var nome = window.prompt("Por favor, insira seu nome:", "Seu Nome");
+            if (nome !== null) 
+            {
+                alert("Olá, " + nome + "!");
+            } 
+            else {
+                alert("Você cancelou a entrada.");
+            }
+
+
+       MOSTRAR:
+       
+       window.alert()
+       window.prompt('Digite um número: ') <--vai mostrar flutuante 
+                                           essa função só retorna strig
+                                           
+       Conversor de valores:
+            String para Números:
+           - Number.parseInt(n)    #converte p/ n° inteiros.
+           - Number.parseFLoat(n)  #converte p/ n° decimais.
+           - Number(n)             #Converte automaticamente p/ ambos.
+       
+           Números para string:
+           - string(n)              #converte p/ mensagem.
+           - n.toString()           #outra forma de fazer a mesma coisa.
+
+        FORMATANDO novas STRING:
+            var s = 'JavaScrip'
+            "Eu estou aprendendo s" //não faz interpolação
+            "Eus estou estudando" + s //usa concatenção
+            usa template strimg

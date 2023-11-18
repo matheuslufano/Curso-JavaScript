@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aual 06 - ex003 </title>
+    <style>
+        body{
+            background-color: rgb(122, 3, 122);
+            color: aliceblue;
+            font: normal 25pt arial;
+        }
+        h1{
+            color: yellow;
+        }
+        h2, p {
+            color: wheat;
+        }
+    </style>
+</head>
+<body >
+    <h1>Olá, mundo!</h1> <!--Isso é um comentario-->
+    <h2>Tratamento de dados </h2>
+    <script>
+
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))//string convertida em number
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))//string convertida em number
+        var soma = n1 + n2 
+        window.alert('A soma de\n'+n1+' + '+n2+ ' = '+String(soma)) // number convertida em string
+        window.alert('Até logo!')
+        /*
+        TRATAMENTOS DE DADOS - aula 06 de JS
+        
+        CONVERSOR DE VALORES:                                    
+             String para Números:
+            - Number.parseInt(n)    #converte p/ n° inteiros.
+            - Number.parseFLoat(n)  #converte p/ n° real.
+            - Number(n)             #Converte automaticamente p/ ambos.
+        
+            Números para string:
+            - string(n)              #converte p/ mensagem.
+            - n.toString()         <-- variável.paraMensagem()
+        
+        
+        FORMATANDO STRING:
+        Strings são mensagnes de texto entre aspas, para fazer a manipulação desses dados existe duas maneiras, concatenção e o template string
+
+            var s = 'JavaScrip'
+            "Eu estou aprendendo s" //não faz interpolação
+            "Eus estou estudando" + s //usa concatenção
+            "Eu estou aprendendo ${s}" //usa template string
+        
+            Outras formas de se modificar uma strings:
+            s.length        #Diz quantos caracteres a string tem
+            s.toUpperCase() #passa toda a string para 'Maiúsculas'
+            s.toLowerCase() #Passa toda a string para 'minusculas'
+
+
+
+
+       */
+
+    </script>
+</body>
+</html>
