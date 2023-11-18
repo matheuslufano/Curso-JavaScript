@@ -1,2 +1,3 @@
-# curso-js
- Curso de Java Script
+# Curso-JavaScript
+ Curso de Java Script do Curso em Vídeo
+✌️
