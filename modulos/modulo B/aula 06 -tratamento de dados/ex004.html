@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 15pt arial;
+        }
+        h1{
+            font: normal 40pt arial;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <script>
+        
+        // var nome = window.prompt("Qual é seu nome? ", "Nome")
+        // var quantidade = nome.length
+
+        // document.write(`<h1>${nome}</h1>`)
+        // document.write(`Nome: ${nome} <br> Seu nome tem ${quantidade} letras. <br>`)
+        // document.write(`Seu nome em maiscúlo fica assim --> "${nome.toUpperCase()}" <br>`)
+        // document.write(`Seu nome em menusculo fica assim --> "${nome.toLowerCase()}" <br>`)
+
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras.`)
+
+
+
+
+
+        /*
+        ESCREVENDO NO BODY DO HTML:
+            document.write()
+
+            uma função incorporada em JavaScript que permite escrever conteúdo diretamente no documento HTML.Quando você chama essa função, o conteúdo especificado é inserido no local onde a chamada da função está no documento HTML. 
+
+            Dentro dele é possivel usar comando em html.
+
+
+
+        
+        COMANDO DE CONVERNÇÃO:
+        Para números reias como 1378.3 é possivel modificar extrutura, ex:
+        
+        var num 1350.3
+        
+        Comando para mostra mais de uma casa após virgula:
+            num.toFixed(2)
+            >>>1350.30
+
+        Comando para mostra casas e converter caracteres:
+            num.toFixed(2).replace(".", ',')
+            >>>1350,30
+
+        Comando para convarter um valor em dinheiro (BRl, USD, EUR ...):
+            num.tolocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            >>> R$ 1350,30
+                ou
+                > num.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
+                'US$ 890,99'
+                > num.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
+                '€ 890,99'
+
+        FORMATANDO STRING:
+        Strings são mensagnes de texto entre aspas, para fazer a manipulação desses dados existe duas maneiras, concatenção e o template string
+
+            var s = 'JavaScrip'
+            "Eu estou aprendendo s" //não faz interpolação
+            "Eus estou estudando" + s //usa concatenção
+            "Eu estou aprendendo ${s}" //usa template string
+        
+            Outras formas de se modificar uma strings:
+            s.length        #Diz quantos caracteres a string tem
+            s.toUpperCase() #passa toda a string para 'Maiúsculas'
+            s.toLowerCase() #Passa toda a string para 'minusculas'
+
+        FORMATANDO NÚMEROS:
+            var n1 = 15657
+
+        */
+    </script>
+</body>
+</html>

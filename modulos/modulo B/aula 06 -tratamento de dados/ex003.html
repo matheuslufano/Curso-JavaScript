@@ -22,17 +22,24 @@
     <h1>Olá, mundo!</h1> <!--Isso é um comentario-->
     <h2>Tratamento de dados </h2>
     <script>
-
-        var n1 = Number.parseFloat(window.prompt('Digite um número: '))//string convertida em number
-        var n2 = Number.parseInt(window.prompt('Digite outro número: '))//string convertida em number
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))//string convertida em number float
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))//string convertida em number inteiro
         var soma = n1 + n2 
+//       Há dois tipos de +(mais): 
+//        + --> concatenação:
+//            (string + string)         
+//        + --> adição;
+//            (number + number)
+//            O comando "window.prompt" retorna uma string, então para se fazer a adição, 
+//            primeiro tem que haver a converção     
+
         window.alert('A soma de\n'+n1+' + '+n2+ ' = '+String(soma)) // number convertida em string
         window.alert('Até logo!')
         /*
         TRATAMENTOS DE DADOS - aula 06 de JS
         
         CONVERSOR DE VALORES:                                    
-             String para Números:
+            String para Números :
             - Number.parseInt(n)    #converte p/ n° inteiros.
             - Number.parseFLoat(n)  #converte p/ n° real.
             - Number(n)             #Converte automaticamente p/ ambos.
@@ -54,11 +61,15 @@
             s.length        #Diz quantos caracteres a string tem
             s.toUpperCase() #passa toda a string para 'Maiúsculas'
             s.toLowerCase() #Passa toda a string para 'minusculas'
-
-
-
-
        */
+        var nome = 'Matheus'
+        var idade = 23
+        var nota = 10
+        // Metador antigo
+        window.alert('O aluno '+nome+' com '+idade+' anos tirou a nota '+nota+'!')
+        // Metador atual
+        // se usa crases + ${}
+        window.alert(`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`)
 
     </script>
 </body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aual 04 - Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            font: normal 20pt arial;
+        }
+        h1{
+            color: yellow;
+        }
+        h2, p {
+            color: wheat;
+        }
+    </style>
+</head>
+<body >
+    <h1>Olá, mundo!</h1>
+    <h2>Já me livrei da maldição</h2>
+    <h2>Comentarios: </h2>
+    <p>// uma única linha</p>
+    <p>/* <br>mias de uma linha <br> */</p>
+
+/*
+VARIÁVEIS E TIPOS PRIMITIVOS - Aula 05:
+Para criar uma variavel se usa a palavra chave "var":
+
+    var nome 
+    var idade 
+    var puta_q_pariu
+
+Com as variaveis criadas é possivel atribuir dados, pois é pra isso que elas servem, como cachotes, caixa, recipente.
+
+    var nome = "matheus" #strings deve estar dentro de aspas
+    var idade = 23      #números tanto faz
+    var nota1 = 9.50
+
+No JS é preciso declarar o valor da variavel, o exemplo acima declara tudo como string mesmo que seja números.
+
+    var nome = String("matheus" )
+    var idade = Number(23)     
+    var nota1 =  Number(9.50)
+
+    CONVERTER:
+    Number.parseInt() //converte pra númeors inteiro
+    Number.parseFloat() //converte pra númeors decimal
+
+Para fazer uma função basica como somar é importante declarar o tipo de dados pos caso contratio o JS irá concaternar tudo.
+
+    (number + number) -> para adição
+    (string + string) -> para concaternação
+    
+    String(s) -> converte a variavel soma em texto
+    ou
+    soma.tostring(soma)
+*/
+    <script>
+       // window.alert('Minha primeira mensagem!')
+        window.confirm('Está gostando de JS?') //janela com botões de confirmação
+        // window.prompt('Qual é seu nome?') //janela que pede um strig
+
+        var nome = window.prompt("Por favor, insira seu nome:", "Seu Nome");
+        if (nome !== null) {
+            alert("Olá, " + nome + "!");
+        } else {
+            alert("Você cancelou a entrada.");
+        }   
+    </script>
+</body>
+</html>
