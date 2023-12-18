@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(209, 20, 209);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="T">Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id= "msg">Clique em mim (id)</div>
+    <div name= "Nome">Clique em mim (nome)</div>
+    <div class= "classe">Clique em mim (class)</div>
+    <div id="seletor">Clique em mim (seletor)</div>
+    <script>
+        //DOM
+        /*
+        Selecionando:
+            - Por Marca:
+            comando css: getElementsByTagName('tag')[posição]
+            Essa seleção declara primeiro a tag e depois entre cochete a posição da tag
+            Ao atribuir um elemento a uma variavel é possivel fazer alterações no seu style.   
+            
+            - Por ID:
+            Comando css: getElementById('id') 
+            Ao declarar um id é possivel selecionar ele pelo comando a cima. 
+
+            - Por name:
+            Comando css: getElementsByName('Nome')[0]
+            O atribuir um nome a uma tag por meio do atributo name é possivel fazer a seleção usando o comando o comando a cima.   
+            
+            - Por class:  
+            Comando css: getElementsByClassName('classe')[0]
+            
+            - Por seleção:  
+            Comando css: querySelector('div#seletor')
+        */
+            //Comando de seleção complexo:
+            window.document.getElementById('T').style.background = 'blue'
+
+            //Seleção de forma simplificado:
+            var corpo = window.document.body
+            var p1 =  window.document.getElementsByTagName('p')[1]
+            var id = window.document.getElementById('msg')
+            var nome = window.document.getElementsByName('Nome')[0]
+            var Classes = window.document.getElementsByClassName('classe')[0]
+            var seleção = window.document.querySelector('div#seletor')
+
+            p1.style.color = 'blue'
+            corpo.style.background = 'black'
+            window.document.write('Comando "getElementsByTagName":  '+ p1.innerText)
+            id.style.background = 'green'
+            id.innerText = 'Comando "innerText + background" por metador de seleção ID'
+            nome.innerText = 'Comando "innerText" por metador de seleção name'
+            Classes.innerText = 'Comando "innerText" por metador de seleção class'
+            seleção.innerText = 'Comando "innerText" por metador selector'
+
+            
+            // window.alert(p1.innerText)
+    </script>
+</body>
+</html>
