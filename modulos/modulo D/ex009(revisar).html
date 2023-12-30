@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex009</title>
+    <style>
+        body{
+            margin: ;
+            background-image: linear-gradient(#EA0050, #0000);
+            background-attachment: fixed;
+        }
+        div{
+            background: #ADFF2F;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            margin-top: 10%;
+        }
+
+        div#botões{
+            background: #ea0052;
+            margin: 0%;
+
+        }
+
+        div > input{
+            margin: 2.5%;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Qual é o seu pais?</h1>
+        <div id="botões">
+            <input type="button" value="BR" onclick="but()">
+            <input type="button" value="EUA" onclick="but()">
+            <input type="button" value="ESP" onclick="but()">
+            <input type="button" value="FRA" onclick="but()">
+            <input type="button" value="AFR" onclick="but()">
+            <p>Você mora em: </p>
+        </div>
+    </div>
+
+    <script>
+        var país = 
+        function but(){
+
+            console.log(`Vivendo em ${país}`)
+            if (país == 'Brasil') {
+                console.log('Você é Brasileiro!')
+            } else {
+                console.log('Você é Estrageiro!')
+            }
+        }
+    </script>
+</body>
+</html>

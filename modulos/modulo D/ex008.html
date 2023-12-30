@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refazendo o ex 08</title>
+    <!-- Condições (parte1) aula 11-->
+</head>
+<body>
+    <h1>Radar</h1>
+    velocidade do carro:  <input type="number" name="radar" id="radar"> km/h 
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resposta">
+
+    </div>
+    <script>
+        function calcular(){
+            var velocidade = window.document.querySelector('input#radar') 
+            var resposta = window.document.querySelector('div#resposta')
+            var vel = Number(velocidade.value)
+            resposta.innerHTML = `<p>A velocidade do seu carro é ${vel} km/h</p>`
+            if (vel > 60) {
+                resposta.innerHTML += '<p>Você ultrapassou a velocidade permitida. MULTADO!</p>'
+            }
+            resposta.innerHTML += `<p> Dirija sempre com sinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
