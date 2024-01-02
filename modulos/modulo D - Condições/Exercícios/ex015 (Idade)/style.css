@@ -1,0 +1,37 @@
+body{
+    background: #252525;
+    background-image: url('imagens/pattern/fundo.png');
+    background-size: 250px ;
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+header h1{
+    text-shadow:rgb(255, 255, 255) 0px 0px 6px, rgb(255, 230, 119) 0px 0px 8px, rgb(251, 255, 0) 0px 0px 24px;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Paragraph */
+footer p{
+    text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+}
+
+/* Section */
+section{
+    background-color:rgba(255, 255, 255, 0.979);
+    transform:translatex(0px) translatey(0px);
+}

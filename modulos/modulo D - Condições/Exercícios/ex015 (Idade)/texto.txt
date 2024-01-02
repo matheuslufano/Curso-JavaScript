@@ -1,0 +1,6 @@
+imagens:
+Homem e Mulher
+- bebes
+- adolecentes
+- adutos
+- idosos
