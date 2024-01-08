@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora | Mateu.js</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+            <p id="res"></p>
+        </section>
+
+        <section class="calc-buttons">
+            <div class="calc-button-row">
+                <button class="calc-button double" onclick="refazer()">
+                    C
+                </button>
+                <button class="calc-button" onclick="apagar()">
+                    &larr;<!--(<-)apagar -->
+                </button>
+                <button class="calc-button" onclick="botão('/')">
+                    &divide;<!--(/)-->
+                </button>
+            </div>
+            
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="botão('7')">
+                    7
+                </button>
+                <button class="calc-button" onclick="botão('8')">
+                    8
+                </button>
+                <button class="calc-button" onclick="botão('9')">
+                    9
+                </button>
+                <button class="calc-button" onclick="botão('*')">
+                    &times;<!--(x)-->
+                </button>
+            </div>
+                
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="botão('4')">
+                    4
+                </button>
+                <button class="calc-button" onclick="botão('5')">
+                    5
+                </button>
+                <button class="calc-button" onclick="botão('6')">
+                    6
+                </button>
+                <button class="calc-button" onclick="botão('-')"> 
+                    &minus;<!--(-)-->
+                </button>
+            </div>
+            
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="botão('1')">
+                    1
+                </button>
+                <button class="calc-button" onclick="botão('2')">
+                    2
+                </button>
+                <button class="calc-button" onclick="botão('3')">
+                    3
+                </button>
+                <button class="calc-button" onclick="botão('+')">
+                    &plus;<!--(+)-->
+                </button>
+            </div>
+            
+            <div class="calc-button-row">
+                <button class="calc-button triple" onclick="botão('0')">
+                    0
+                </button>
+                <button class="calc-button" onclick="calcular()">
+                    &equals;<!--(=)-->
+                </button>
+            </div>
+        </section>
+        
+        <section id="qr">
+            <a href="https://matheuslufano.github.io/pagina-de-links/" rel="next" target="_blank">©Mateu.py</a>
+            <img src="qrcode_matheuslufano.github.io (1).png" alt="qr">
+        </section>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

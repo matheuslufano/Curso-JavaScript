@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Número:
+                <input type="number" name="num" id="txtn">
+                <input type="button" value="Gerar Tabuada"
+                onclick="tabuada()">
+            </p>
+        </div>
+
+        <div id="res">
+            <!-- <p>Multiplicação Divisão Adição subtração</p> -->
+            <select name="vezes" id="vezes" size="11">
+                <option > Multiplicação:   </option>
+            </select>
+            <select name="divisão" id="divisão" size="11">
+                <option value="">Divisão: </option>
+            </select>
+            <select name="adição" id="adição" size="11">
+                <option value="">Adição</option>
+            </select>
+            <select name="subtração" id="subtração" size="11">
+                <option value="">subtração</option>
+            </select>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Mateu.py desenvolverdor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
